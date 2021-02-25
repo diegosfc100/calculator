@@ -1,204 +1,207 @@
 .padding{
-    position: fixed;
-  }
-  .container0 {
-    display: flex;
-  }
-  .container {
-    display: flex;
-  /*   padding-left: 15px;
-    margin: 0 auto; */
-  }
-  
-  .row div {
-    width: 60px;
-    height: 60px;
-    border: 2px hidden grey;
-  }
-  #equal {
-    border: 2px hidden grey;
-    width: 60px;
-    height: 125px;
-    flex-wrap: wrap;
-    margin-left: -3px;
-    margin-top: -65px;
-  }
-  #zero {
-    width: 122px;
-  }
-  #calculator {
-  /*   position: absolute; */
-    margin: 0 auto;
-    width: 260px;
-    border: 2px solid #bfbfbf;
-    border-radius: 25px;
-    box-shadow: 0 0 20px #000;
-    background: -webkit-linear-gradient(
-      left,
-      #c9c9c9,
-      #8c8c8c,
-      #c9c9c9,
-      #8c8c8c,
-      #c9c9c9
-    ); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(
-      left,
-      #c9c9c9,
-      #8c8c8c,
-      #c9c9c9,
-      #8c8c8c,
-      #c9c9c9
-    ); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(
-      left,
-      #c9c9c9,
-      #8c8c8c,
-      #c9c9c9,
-      #8c8c8c,
-      #c9c9c9
-    ); /* For Fx 3.6 to 15 */
-    background: linear-gradient(
-      left,
-      #c9c9c9,
-      #8c8c8c,
-      #c9c9c9,
-      #8c8c8c,
-      #c9c9c9
-    ); /* Standard syntax (must be last) */
-  }
-  .display {
-    width: 100%;
-    height: 110px;
-    padding-top: 20px;
-  }
-  
-  .button {
-    background-color: #3f5465;
-    border: none;
-    color: white;
+  position: fixed;
+}
+.container0 {
+  display: flex;
+}
+.container {
+  display: flex;
+/*   padding-left: 15px;
+  margin: 0 auto; */
+}
+
+.row div {
+  width: 60px;
+  height: 60px;
+  border: 2px hidden grey;
+}
+#equal {
+  border: 2px hidden grey;
+  width: 60px;
+  height: 125px;
+  flex-wrap: wrap;
+  margin-left: -3px;
+  margin-top: -65px;
+}
+#zero {
+  width: 122px;
+}
+#calculator {
+/*   position: absolute; */
+  margin: 0 auto;
+  width: 260px;
+  border: 2px solid #bfbfbf;
+  border-radius: 25px;
+  box-shadow: 0 0 20px #000;
+  background: -webkit-linear-gradient(
+    left,
+    #c9c9c9,
+    #8c8c8c,
+    #c9c9c9,
+    #8c8c8c,
+    #c9c9c9
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    left,
+    #c9c9c9,
+    #8c8c8c,
+    #c9c9c9,
+    #8c8c8c,
+    #c9c9c9
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    left,
+    #c9c9c9,
+    #8c8c8c,
+    #c9c9c9,
+    #8c8c8c,
+    #c9c9c9
+  ); /* For Fx 3.6 to 15 */
+  background: linear-gradient(
+    left,
+    #c9c9c9,
+    #8c8c8c,
+    #c9c9c9,
+    #8c8c8c,
+    #c9c9c9
+  ); /* Standard syntax (must be last) */
+}
+.display {
+  width: 100%;
+  height: 110px;
+  padding-top: 20px;
+}
+
+.button {
+  background-color: #3f5465;
+  border: none;
+  color: white;
+  outline: none;
+  box-shadow: 0 3px #808080;
+  padding: 15px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 6px;
+  cursor: pointer;
+}
+.button:active {
+  background-color: #475e71;
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
+}
+
+.button1 {
+  border-radius: 12px;
+}
+.button2 {
+  border-radius: 12px;
+  padding: 15px 18px;
+}
+.button2-a {
+  border-radius: 12px;
+  padding: 15px 20px;
+}
+.button2-b {
+  border-radius: 12px;
+  padding: 15px 19px;
+}
+
+.button3 {
+  border-radius: 12px;
+  padding: 15px 50px;
+}
+
+.button4 {
+  border-radius: 12px;
+  padding: 48px 18px;
+}
+
+#display_screen {
+  width: 90%;
+  height: 80px;
+  margin: auto;
+  border: 2px solid #bfbfbf;
+  border-radius: 15px;
+  background-color: #e2e2e2;
+  box-shadow: 0 0 5px #000;
+  padding-right: 10px;
+}
+
+#AC, #CE {
+  background-color: #c3712d;
+}
+
+#displayed_item {
+  font-size: 29px;
+  position: relative;
+  margin: 16px 0 0 -1px;
+  background-color: #e2e2e2;
+  border: none;
+/*   pointer-events: none; */
+}
+body {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: -webkit-linear-gradient(
+    left,
+    #551a8b,
+    #663096,
+    #7647a2,
+    #7647a2,
+    #7647a2,
+    #663096,
+    #551a8b
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    left,
+    #551a8b,
+    #663096,
+    #7647a2,
+    #7647a2,
+    #7647a2,
+    #663096,
+    #551a8b
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    left,
+    #551a8b,
+    #663096,
+    #7647a2,
+    #7647a2,
+    #7647a2,
+    #663096,
+    #551a8b
+  ); /* For Fx 3.6 to 15 */
+  background: linear-gradient(
+    left,
+    #551a8b,
+    #663096,
+    #7647a2,
+    #7647a2,
+    #7647a2,
+    #663096,
+    #551a8b
+  ); /* Standard syntax (must be last) */
+}
+input{
+  width: 100%;
+  overflow: scroll;
+}
+#all_buttons{
+  text-align: center;
+/*     padding-left: 15px; */
+  padding: 0px 15px 0px 15px;
+  margin: 0 auto;
+}
+
+  input:focus {
     outline: none;
-    box-shadow: 0 3px #808080;
-    padding: 15px 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 6px;
-    cursor: pointer;
-  }
-  .button:active {
-    background-color: #475e71;
-    box-shadow: 0 4px #666;
-    transform: translateY(4px);
-  }
-  
-  .button1 {
-    border-radius: 12px;
-  }
-  .button2 {
-    border-radius: 12px;
-    padding: 15px 18px;
-  }
-  .button2-a {
-    border-radius: 12px;
-    padding: 15px 20px;
-  }
-  .button2-b {
-    border-radius: 12px;
-    padding: 15px 19px;
-  }
-  
-  .button3 {
-    border-radius: 12px;
-    padding: 15px 50px;
-  }
-  
-  .button4 {
-    border-radius: 12px;
-    padding: 48px 18px;
-  }
-  
-  #display_screen {
-    width: 90%;
-    height: 80px;
-    margin: auto;
-    border: 2px solid #bfbfbf;
-    border-radius: 15px;
-    background-color: #e2e2e2;
-    box-shadow: 0 0 5px #000;
-    padding-right: 10px;
-  }
-  
-  #AC, #CE {
-    background-color: #c3712d;
-  }
-  
-  #displayed_item {
-    font-size: 29px;
-    position: relative;
-    margin: 16px 0 0 -1px;
-    background-color: #e2e2e2;
-    border: none;
-  /*   pointer-events: none; */
-  }
-  body {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background: -webkit-linear-gradient(
-      left,
-      #000040,
-      #000080,
-      #000040,
-      #000080,
-      #000040,
-      #000080,
-      #000040
-    ); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(
-      left,
-      #000040,
-      #000080,
-      #000040,
-      #000080,
-      #000040,
-      #000080,
-      #000040
-    ); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(
-      left,
-      #000040,
-      #000080,
-      #000040,
-      #000080,
-      #000040,
-      #000080,
-      #000040
-    ); /* For Fx 3.6 to 15 */
-    background: linear-gradient(
-      left,
-      #000040,
-      #000080,
-      #000040,
-      #000080,
-      #000040,
-      #000080,
-      #000040
-    ); /* Standard syntax (must be last) */
-  }
-  input{
-    width: 100%;
-    overflow: scroll;
-  }
-  #all_buttons{
-    text-align: center;
-  /*     padding-left: 15px; */
-    padding: 0px 15px 0px 15px;
-    margin: 0 auto;
-  }
-  
-    input:focus {
-      outline: none;
-      cursor: default;
-  
-  }
-  
+    cursor: default;
+
+}
+
+.bottom{
+  margin-right: 54px;
+}
