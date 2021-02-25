@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="padding">
+        <div id="calculator">
+            <div class="container0 display">
+                <div id="display_screen">
+                    <input id="displayed_item" value="0" style="text-align:right" size="15" >
+                </div>
+            </div>
+            <div id="all_buttons">                
+                <div class="container row">
+                    <div> <button class="button button1" id="AC" onclick="myFunction('AC')">AC</button></div>
+                    <div><button class="button button1" id="CE" onclick="myFunction('CE')">CE</button></div>
+                    <div><button class="button button2" id="÷"onclick="myFunction('÷')">÷</button></div>
+                    <div><button class="button button2" id="x" onclick="myFunction('x')">x</button></div>
+                </div>
+
+                <div class="container row">
+                    <div><button class="button button2" id="7" onclick="myFunction(7)">7</button></div>
+                    <div><button class="button button2" id="8" onclick="myFunction(8)">8</button></div>
+                    <div><button class="button button2" id="9" onclick="myFunction(9)">9</button></div>
+                    <div><button class="button button2-b" onclick="myFunction('-')">-</button></div>
+                </div>
+
+                <div class="container row">
+                    <div><button class="button button2" id="4" onclick="myFunction(4)">4</button></div>
+                    <div><button class="button button2" id="5" onclick="myFunction(5)">5</button></div>
+                    <div><button class="button button2" id="6" onclick="myFunction(6)">6</button></div>
+                    <div><button class="button button2" onclick="myFunction('+')">+</button></div>
+                </div>
+
+                <div class="container row">
+                    <div><button class="button button2" id="1" onclick="myFunction(1)">1</button></div>
+                    <div><button class="button button2" id="2" onclick="myFunction(2)">2</button></div>
+                    <div><button class="button button2" id="3" onclick="myFunction(3)">3</button></div>
+                </div>
+
+                <div class="container row">
+                    <div id="zero"><button class="button button3" onclick="myFunction(0)">0</button></div>
+                    <div id="decimal"><button class="button button2-a" onclick="myFunction('.')">.</button></div>
+                    <div id="equal"><button class="button button4" onclick="myFunction('=')">=</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <script src="js/index.js"></script>
+</html>
