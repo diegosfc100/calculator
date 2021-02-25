@@ -1,1 +1,5 @@
-# Calculator
+## Calculator
+
+> Basic functionality;
+
+> Responsive design.
