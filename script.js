@@ -3,13 +3,9 @@ display = document.querySelector("input");
 let list = []; //values displayed
 let current_operation = ""; //values calculated
 
-
 function myFunction(x) {
-
-
   //Calculate and display answer after '=' button is pressed
   function checkVal() {
-
     try{
         let answer = eval(current_operation);
     // display.value = answer.toPrecision(4);
@@ -19,7 +15,7 @@ function myFunction(x) {
             list.push(answer);
             current_operation = answer.toString();
          
-        }else {
+         }else {
             list = [];
             list.push(answer);
             current_operation = answer.toString();
@@ -40,37 +36,31 @@ function myFunction(x) {
 
   //When CE button's pressed
   function cancelEntry() {
+    let newlisting = [];
     list.pop()
-    let number = current_operation;
-    let splitter = "";
+    list.pop()
 
-    if (!isNaN(number[number.length - 1])) {
-      for (let i = number.length - 1; i >= 0; i--) {
-        if (isNaN(number[i])) {
-          splitter += number[i];
-          break;
+    //current_operation = list.join('')
+
+    for (let i=0; i < list.length; i++){
+      
+        if(list[i] === '÷'){
+          newlisting.push('/');
+        }else if (list[i] === 'x'){
+          newlisting.push('*');
+        }else{
+          newlisting.push(list[i]);
         }
-      }
+
     }
-    let newdisplay = number.split(splitter);
-    list = list.join('')
-    let list_splitter = '';
-    
-    if(splitter === '/'){
-      list_splitter = '÷';
-    }else if (splitter === '*'){
-      list_splitter = 'x';
+ 
+    current_operation = newlisting.join('')
+    if (current_operation.length === 0){
+      display.value = "0"
     }else{
-      list_splitter = splitter;  
+      display.value = list.join('') 
     }
     
-    list = list.split(list_splitter)
-    list.pop()
-    newdisplay.pop();
-    current_operation = newdisplay.join("");
-//     list = newdisplay;
-//     display.value = current_operation;
-    display.value = list.join('')
   }
   
   
